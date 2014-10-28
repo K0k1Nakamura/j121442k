@@ -1,4 +1,5 @@
 <?php
+include 'ChromePhp.php';
 session_start();
 ?>
 
@@ -32,6 +33,8 @@ if(!isset($_SESSION["login_name"])){
 		<a href="logout.php">ログアウト</a>
 <?php
 }
+ChromePhp::log('セッション');
+ChromePhp::log($_SESSION);
 ?>		
 	</body>
 </html>
