@@ -18,6 +18,8 @@ $query_pwd = "SELECT * FROM member WHERE login_name=$1 AND pwd=$2";
 $result_pwd = pg_prepare($conn, "my_query_pwd", $query_pwd);
 $result_pwd = pg_execute($conn, "my_query_pwd", array("$login_name", "$md5pwd"));
 
+ChromePhp::log($result_pwd);
+
 if(pg_num_rows($result_name) == 0){
 	print "そんなゆーざーいない<br>";
 	print "<a href=\"top.php\">TOPへ</a>";
