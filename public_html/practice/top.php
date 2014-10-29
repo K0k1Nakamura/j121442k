@@ -4,14 +4,14 @@ session_start();
 ?>
 
 <html>
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	</head>
-	<body>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+</head>
+<body>
 
-<?php
-if(!isset($_SESSION["login_name"])){
-?>
+	<?php
+	if(!isset($_SESSION["login_name"])){
+		?>
 
 		<h2>登録</h2>
 		<form method="POST" action="regist.php">
@@ -26,16 +26,51 @@ if(!isset($_SESSION["login_name"])){
 			<input type="submit" value="ログイン">
 		</form>
 
-<?php
-}else{
-?>
+		<?php
+	}else{
+		?>
 		<h2>ようこそ！</h2>
 		<a href="logout.php">ログアウト</a>
-<?php
-}
-ChromePhp::log('セッション');
-ChromePhp::log($_SESSION);
-?>		
-	</body>
+		<?php
+	}
+	ChromePhp::log('セッション');
+	ChromePhp::log($_SESSION);
+	?>		
+	<h2>検索</h2>
+	教科書名<input type="text" name="textbook" id="textbook_name"><br>
+	<input type="submit" id="search" value="検索"><br>
+	<div id="result"></div>
+
+
+</body>
 </html>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+	$(function(){
+		$('#search').click(function() {
+			$.get('search.php', {
+				name: $('#textbook_name').val()
+			})
+			.done(function(res) {
+				document.getElementById("result").innerHTML="";
+				
+				if(res == null) {
+					document.getElementById("result").innerHTML="There is no textbook.";
+				}else{
+					$('#result').append('<table id="text_table"></table>');
+					$('#text_table').append('<tr><th>id</th><th>名前</th></tr>');
+					for (i = 0; i < res.length; i++) {
+						$('#text_table').append('<tr><td>'+res[i].id+'</td><td>'+res[i].name+'</td></tr>');	
+					}
+				}
+			})
+			.fail(function(res) {
+				console.log(error);
+			});
+		});
+	});
+
+</script>
 
