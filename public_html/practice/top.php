@@ -31,6 +31,12 @@ session_start();
 		?>
 		<h2>ようこそ！</h2>
 		<a href="logout.php">ログアウト</a>
+		<h2>出品</h2>
+		<form method="POST" action="display.php">
+			教科書名<input type="text" name="name"><br>
+			価格<input type="text" name="price"><br>
+			<input type="submit" value="出品">	
+		</form>
 		<?php
 	}
 	ChromePhp::log('セッション');
