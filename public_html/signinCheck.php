@@ -35,19 +35,19 @@ if(!isset($_SESSION["login_name"])){
 		print htmlspecialchars($row["login_name"])."さん、ようこそ<br>";
 		print "<a href=\"index.php\">TOPへ</a>";
 		$_SESSION["login_name"] = $row['login_name'];
+
+	// FIXME: この時点でセッション入れるからheaderなどが未ログイン状態
+	// だから、ここでリダイレクトしてtopに飛ばしてしまおう。
+
 	}
 
 
 }else{
-
-
 	print "ログインしてるで<br>";
 }
-
-
-
+?>
+<?php
 ChromePhp::log('セッション');
 ChromePhp::log($_SESSION);
-
 include("footer.html");
 ChromePhp::log($_SESSION);

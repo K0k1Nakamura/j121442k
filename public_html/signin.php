@@ -2,7 +2,7 @@
 include 'ChromePhp.php';
 session_start();
 include("header.html");
-print "<div style='height: 50px'></div>";
+print "<div style='height: 51px'></div>";
 ?>
 
 

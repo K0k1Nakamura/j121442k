@@ -79,13 +79,14 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
+                                <?php print "<a href=\"mypage.php\">".htmlspecialchars($_SESSION["login_name"])."</a>"?>
+                            </li>
+                            <li class="footer-menu-divider"><a>|</a></li>
+                            <li>
                                 <a href="index.php">About</a>
                             </li>
                             <li>
                                 <a href="index.php">Search</a>
-                            </li>
-                            <li>
-                                <a href="index.php">My Page</a>
                             </li>
                             <li>
                                 <a href="signout.php">Sign out</a>

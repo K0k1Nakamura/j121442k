@@ -1,13 +1,9 @@
 <?php
 include 'ChromePhp.php';
-session_start();
+session_destroy();
 include("header.html");
 print "<div style='height: 51px'></div>";
 
-?>
-
-<?php
-session_destroy();
 ?>
 <h2>ログアウトしたった<br></h2>
 <a href="index.php">home</a>
