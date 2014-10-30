@@ -1,0 +1,65 @@
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+
+                    <?php
+                    if(!isset($_SESSION["login_name"])){
+                        ?>
+                         <!-- 非ログイン時のフッター -->
+                        <li>
+                            <a href="index.php">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="index.php">Search</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="signin.php">Sign in</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="signin.php">Register</a>
+                        </li>
+                        <?php
+                    }else{
+                        ?>
+                         <!-- ログイン時のフッター -->
+
+                        <li>
+                            <a href="index.php">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="index.php">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="index.php">My Page</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="signout.php">Sign out</a>
+                        </li>
+                        <?php
+                    }
+                    ?>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; KOKI NAKAMURA 2014. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery Version 1.11.0 -->
+<script src="js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
