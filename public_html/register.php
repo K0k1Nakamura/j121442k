@@ -23,4 +23,3 @@ if(!isset($_SESSION["login_name"])){
 ?>
 <?php
 include("footer.html");
-ChromePhp::log($_SESSION);

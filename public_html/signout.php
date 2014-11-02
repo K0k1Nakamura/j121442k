@@ -1,6 +1,9 @@
 <?php
 include 'ChromePhp.php';
-session_destroy();
+session_start();
+if(isset($_SESSION["login_name"])){
+	session_destroy();
+}
 include("header.html");
 print "<div style='height: 51px'></div>";
 
@@ -10,4 +13,3 @@ print "<div style='height: 51px'></div>";
 
 <?php
 include("footer.html");
-ChromePhp::log($_SESSION);
