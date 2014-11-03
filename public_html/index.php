@@ -1,7 +1,7 @@
 <?php
 include 'ChromePhp.php';
 session_start();
-include("header.html") 
+include("header.html"); 
 ?>
 
 
