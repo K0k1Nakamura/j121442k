@@ -16,6 +16,16 @@ for($i=0; $i < pg_num_rows($result_text); $i++) {
 	$res[] = array(
 		'id'=>htmlspecialchars($row['id']),
 		'name'=>htmlspecialchars($row['name']),
+		'author'=>htmlspecialchars($row['author']),
+		'price'=>htmlspecialchars($row['price']),
+		'comment'=>htmlspecialchars($row['comment']),
+		'pic'=>htmlspecialchars($row['pic']),
+		'class'=>htmlspecialchars($row['class']),
+		'university'=>htmlspecialchars($row['university']),
+		'faculty'=>htmlspecialchars($row['faculty']),
+		'department'=>htmlspecialchars($row['department']),
+		'delivery_method'=>htmlspecialchars($row['delivery_method']),
+		'seller'=>htmlspecialchars($row['seller']),
 		);
 }
 
