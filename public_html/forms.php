@@ -214,169 +214,94 @@
             <!-- /.navbar-static-side -->
         </div>
 
-        <div id="page-wrapper">
+        <div class="col-md-9" id="page-wrapper">
 
             <!-- あまりにヒューリスティックだけど、ここにdivとらないと背景の表示が若干ずれる。  -->
-            <div style='height: 51px'></div>
-
-
+            <div style="height: 1px"></div>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
+            <h2>tatatata</h2>
             <div class="col-sm-4 col-lg-4 col-md-4">
                 <div class="thumbnail">
                     <img src="http://placehold.it/320x150" alt="">
                     <div class="caption">
-                        <h4>$64.99</h4>
-                        <h4><a href="#">Second Product</a>
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4><a href="#">Firnnnnnstm uuu u u uhhhhhhh hhhh hhhhhhhhh hhhhh Product</a>
                         </h4>
-                        <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h6>hjjjj<br>dfghjklkjhgf</h6>   
                     </div>
-                    <div class="ratings">
-                        <p class="pull-right">12 reviews</p>
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </p>
+
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/320x150" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4><a href="#">Firnnnnnstm uuu u u uhhhhhhh hhhh hhhhhhhhh hhhhh Product</a>
+                        </h4>
+                        <h6>hjjjj<br>dfghjklkjhgf</h6>   
                     </div>
-                </div>
-            </div> <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail">
-                <img src="http://placehold.it/320x150" alt="">
-                <div class="caption">
-                    <h4>$64.99</h4>
-                    <h4><a href="#">Second Product</a>
-                    </h4>
-                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="ratings">
-                    <p class="pull-right">12 reviews</p>
-                    <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
+
                 </div>
             </div>
-        </div> <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <img src="http://placehold.it/320x150" alt="">
-            <div class="caption">
-                <h4>$64.99</h4>
-                <h4><a href="#">Second Product</a>
-                </h4>
-                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/320x150" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4><a href="#">Firnnnnnstm uuu u u uhhhhhhh hhhh hhhhhhhhh hhhhh Product</a>
+                        </h4>
+                        <h6>hjjjj<br>dfghjklkjhgf</h6>   
+                    </div>
+
+                </div>
             </div>
-            <div class="ratings">
-                <p class="pull-right">12 reviews</p>
-                <p>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star-empty"></span>
-                </p>
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/320x150" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4><a href="#">Firnnnnnstm uuu u u uhhhhhhh hhhh hhhhhhhhh hhhhh Product</a>
+                        </h4>
+                        <h6>hjjjj<br>dfghjklkjhgf</h6>   
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </div> <div class="col-sm-4 col-lg-4 col-md-4">
-    <div class="thumbnail">
-        <img src="http://placehold.it/320x150" alt="">
-        <div class="caption">
-            <h4>$64.99</h4>
-            <h4><a href="#">Second Product</a>
-            </h4>
-            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="ratings">
-            <p class="pull-right">12 reviews</p>
-            <p>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-            </p>
+
         </div>
     </div>
-</div> <div class="col-sm-4 col-lg-4 col-md-4">
-<div class="thumbnail">
-    <img src="http://placehold.it/320x150" alt="">
-    <div class="caption">
-        <h4>$64.99</h4>
-        <h4><a href="#">Second Product</a>
-        </h4>
-        <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="ratings">
-        <p class="pull-right">12 reviews</p>
-        <p>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star-empty"></span>
-        </p>
-    </div>
-</div>
-</div> <div class="col-sm-4 col-lg-4 col-md-4">
-<div class="thumbnail">
-    <img src="http://placehold.it/320x150" alt="">
-    <div class="caption">
-        <h4>$64.99</h4>
-        <h4><a href="#">Second Product</a>
-        </h4>
-        <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="ratings">
-        <p class="pull-right">12 reviews</p>
-        <p>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star-empty"></span>
-        </p>
-    </div>
-</div>
-</div> <div class="col-sm-4 col-lg-4 col-md-4">
-<div class="thumbnail">
-    <img src="http://placehold.it/320x150" alt="">
-    <div class="caption">
-        <h4>$64.99</h4>
-        <h4><a href="#">Second Product</a>
-        </h4>
-        <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="ratings">
-        <p class="pull-right">12 reviews</p>
-        <p>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star"></span>
-            <span class="glyphicon glyphicon-star-empty"></span>
-        </p>
-    </div>
-</div>
-</div>
-<!-- <div style='height: 51px'></div> -->
-</div>
-</div>
-<!-- /#wrapper -->
+    <!-- /#wrapper -->
 
-<!-- jQuery Version 1.11.0 -->
-<script src="js/jquery-1.11.0.js"></script>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-<!-- Metis Menu Plugin JavaScript -->
-<script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
 
-<!-- Custom Theme JavaScript -->
-<script src="js/sb-admin-2.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
 
 </body>
 
