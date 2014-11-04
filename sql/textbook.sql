@@ -11,42 +11,44 @@ CREATE TABLE textbook (
 	university	varchar,
 	faculty		varchar,
 	department	varchar,
+	grade		int,
 	delivery_method	varchar,
 	seller		int,
+	stock		int,
 	PRIMARY KEY	(id)
 );
 
 INSERT INTO textbook(
 	name,author,price,comment,
 	pic,class,university,faculty,department,
-	delivery_method,seller
+	delivery_method,seller,stock
 	)VALUES(
 	'ネットワークのすべて', '中村晃貴',2000,'折り目あり。しょうてすとのこたえつき',
-	'pic.png','ネットワーク工学','慶應義塾大学','理工学部','情報工学科',
-	'手渡しのみ',1);
+	'pic.png','ネットワーク工学','慶應義塾大学','理工学部','情報工学科',3,
+	'手渡しのみ',1,1);
 
 INSERT INTO textbook(
 	name,author,price,comment,
 	pic,class,university,faculty,department,
-	delivery_method,seller
+	delivery_method,seller,stock
 	)VALUES(
 	'ネットワークのすべて2', '中村晃貴',2000,'折り目あり。しょうてすとのこたえつき',
-	'pic.png','ネットワーク工学','慶應義塾大学','理工学部','情報工学科',
-	'手渡しのみ',1);
+	'pic.png','ネットワーク工学','慶應義塾大学','理工学部','情報工学科',4,
+	'手渡しのみ',1,1);
 
 INSERT INTO textbook(
 	name,author,price,comment,
 	pic,class,university,faculty,department,
-	delivery_method,seller
+	delivery_method,seller,stock
 	)VALUES(
 	'フーリエ変換', '中村晃貴',20000,'名著。',
-	'pic.png','数学','慶應義塾大学','理工学部','',
-	'手渡しのみ',1);
+	'pic.png','数学','慶應義塾大学','理工学部','',3,
+	'手渡しのみ',1,1);
 INSERT INTO textbook(
 	name,author,price,comment,
 	pic,class,university,faculty,department,
-	delivery_method,seller
+	delivery_method,seller,stock
 	)VALUES(
 	'商いについて','中村晃貴',200,'名著。',
-	'pic.png','商学','慶應義塾大学','商学部','',
-	'手渡しのみ',1);
+	'pic.png','商学','慶應義塾大学','商学部','',4,
+	'手渡しのみ',1,1);
