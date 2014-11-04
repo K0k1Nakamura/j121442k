@@ -1,3 +1,7 @@
+<?php
+include 'ChromePhp.php';
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 

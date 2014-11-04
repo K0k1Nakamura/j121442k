@@ -1,6 +1,6 @@
 $(function(){
 
-	var text_name, class_name, university, faculty, department;
+	var text_name = class_name = university = faculty = department = "";
 
 	function displayText(res) {
 		document.getElementById("result").innerHTML="";

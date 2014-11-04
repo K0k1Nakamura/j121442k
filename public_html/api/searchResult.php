@@ -1,6 +1,5 @@
 <?
 include '../ChromePhp.php';
-session_start();
 
 $name = $_GET['name'];
 $class = $_GET['class_name'];
@@ -12,8 +11,8 @@ $department = $_GET['department'];
 $conn = pg_connect("host=localhost dbname=j121442k user=j121442k");
 $query_text = "SELECT * FROM textbook WHERE name LIKE $1 AND class LIKE $2
 AND university LIKE $3 AND faculty LIKE $4 AND department LIKE $5";
-$result_text = pg_prepare($conn, "query_text", $query_text);
-$result_text = pg_execute($conn, "query_text", array("%$name%", "%$class%", "%$university%", "%$faculty%", "%$department%"));
+$result_text = pg_prepare($conn, "", $query_text);
+$result_text = pg_execute($conn, "", array("%$name%", "%$class%", "%$university%", "%$faculty%", "%$department%"));
 
 $res=null;
 
@@ -30,8 +29,10 @@ for($i=0; $i < pg_num_rows($result_text); $i++) {
 		'university'=>htmlspecialchars($row['university']),
 		'faculty'=>htmlspecialchars($row['faculty']),
 		'department'=>htmlspecialchars($row['department']),
+		'grade'=>htmlspecialchars($row['grade']),
 		'delivery_method'=>htmlspecialchars($row['delivery_method']),
 		'seller'=>htmlspecialchars($row['seller']),
+		'stock'=>htmlspecialchars($row['stock']),
 		);
 }
 

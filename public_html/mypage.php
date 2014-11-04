@@ -133,7 +133,6 @@ if(!isset($_SESSION["login_name"])){
 
                             <h5>大学、学部から探す<br></h5>
 
-                            <!--  大学名一覧！！　-->
                             <li>
                                 <a href="#" class="no_selection">指定なし</a>
                             </li>
@@ -163,24 +162,24 @@ if(!isset($_SESSION["login_name"])){
                             </div>
                             <div class="panel-body">
                                 <div class="row">
-                                    <div class="col-lg-6">
-                                        <form role="form">
+                                    <form role="form" enctype="multipart/form-data" method="post" action="save.php">
+                                        <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label>教科書名</label>
-                                                <input class="form-control">
+                                                <input name="name" class="form-control">
                                                 <p class="help-block">※必須項目です。</p>
                                             </div>
 
                                             <div class="form-group">
                                                 <label>著者名</label>
-                                                <input class="form-control">
+                                                <input name="author" class="form-control">
                                             </div>
 
                                             <div class="form-group">
                                                 <label>価格</label>
                                                 <div class="input-group">
                                                     <span class="input-group-addon">¥</span>
-                                                    <input class="form-control">
+                                                    <input name="price" class="form-control">
                                                 </div>
                                                 <p class="help-block">※必須項目です。</p>
                                             </div>
@@ -192,13 +191,13 @@ if(!isset($_SESSION["login_name"])){
 
                                             <div class="form-group">
                                                 <label>写真</label>
-                                                <input type="file">
+                                                <input name="pic" type="file">
                                                 <p class="help-block">※おっきすぎるのははいらないよお。</p>
                                             </div>
 
                                             <div class="form-group">
                                                 <label>商品詳細、説明文</label>
-                                                <textarea class="form-control" rows="8"></textarea>
+                                                <textarea name="comment" class="form-control" rows="8"></textarea>
                                                 <p class="help-block">
                                                     ※商品の状態や説明を入力してください。<br>
                                                     <br>
@@ -214,13 +213,13 @@ if(!isset($_SESSION["login_name"])){
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label>授業名</label>
-                                                <input class="form-control" placeholder="任意">
+                                                <input name="class_name" class="form-control" placeholder="任意">
                                                 <p class="help-block">※その教科書が使用される授業名を入力してください。</p>
                                             </div>
 
                                             <div class="form-group">
                                                 <label>学年</label>
-                                                <select class="form-control">
+                                                <select name="grade" class="form-control">
                                                     <option>1</option>
                                                     <option>2</option>
                                                     <option>3</option>
@@ -232,7 +231,7 @@ if(!isset($_SESSION["login_name"])){
                                             </div>
                                             <div class="form-group">
                                                 <label>大学</label>
-                                                <select class="form-control">
+                                                <select name="university" class="form-control">
                                                     <option>1</option>
                                                     <option>2</option>
                                                     <option>3</option>
@@ -242,7 +241,7 @@ if(!isset($_SESSION["login_name"])){
                                             </div>
                                             <div class="form-group">
                                                 <label>学部等</label>
-                                                <select class="form-control" disabled="disable">
+                                                <select name="faculty" class="form-control" disabled="disable">
                                                     <option>1</option>
                                                     <option>2</option>
                                                     <option>3</option>
@@ -250,10 +249,10 @@ if(!isset($_SESSION["login_name"])){
                                                     <option>5</option>
                                                 </select>
                                             </div>
-                                            
+
                                             <div class="form-group">
                                                 <label>学科等</label>
-                                                <select class="form-control" disabled="disable">
+                                                <select name="department" class="form-control" disabled="disable">
                                                     <option>1</option>
                                                     <option>2</option>
                                                     <option>3</option>
@@ -263,7 +262,7 @@ if(!isset($_SESSION["login_name"])){
                                             </div>
                                             <div class="form-group">
                                                 <label>受け渡し方法</label>
-                                                <select class="form-control">
+                                                <select name="delivery_method" class="form-control">
                                                     <option>手渡しのみ</option>
                                                     <option>郵送のみ</option>
                                                     <option>手渡し、郵送可</option>
@@ -272,18 +271,15 @@ if(!isset($_SESSION["login_name"])){
                                             </div>
 
 
+                                        </div>
 
+                                        <!-- /.col-lg-6 (nested) -->
+                                        <button type="submit" class="btn btn-default">出品</button>
+                                        <button type="reset" class="btn btn-default">リセット</button>
 
-                                        </form>
-
-
-                                        
-                                    </div>
-                                    <!-- /.col-lg-6 (nested) -->
+                                    </form>
                                 </div>
                                 <!-- /.row (nested) -->
-                                <button type="submit" class="btn btn-default">出品</button>
-                                <button type="reset" class="btn btn-default">リセット</button>
                             </div>
                             <!-- /.panel-body -->
                         </div>
