@@ -55,9 +55,15 @@ $(function(){
 
 	// 授業の名前で探す
 	$('#class_search').click(function() {
+		text_name = "";
+		class_name =  $('#class_name').val();
+
 		$.get('api/searchResult.php', {
-			name: $('#textbook_name').val(),
-			class_name: $('#class_name').val()
+			name: text_name,
+			class_name: class_name,
+			university: university,
+			faculty: faculty,
+			department: department
 		})
 		.done(function(res) {
 			displayText(res);

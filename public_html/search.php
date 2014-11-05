@@ -318,7 +318,7 @@ session_start();
                 <!-- /.navbar-static-side -->
             </div>
 
-            <div class="col-md-9" id="page-wrapper">
+            <div id="page-wrapper">
 
                 <!-- あまりにヒューリスティックだけど、ここにdivとらないと背景の表示が若干ずれる。  -->
                 <div style="height: 30px"></div>
