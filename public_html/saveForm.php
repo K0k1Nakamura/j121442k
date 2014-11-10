@@ -2,7 +2,8 @@
 include 'ChromePhp.php';
 session_start();
 if(!isset($_SESSION["login_name"])):
-	print "fuck you";
+	header("Location: index.php");
+	
 else:
 	include("header2.html"); 
 ?>
@@ -25,7 +26,7 @@ else:
 						<div class="col-lg-6">
 							<div class="form-group">
 								<label>教科書名</label>
-								<input name="name" class="form-control">
+								<input name="name" class="form-control" required>
 								<p class="help-block">※必須項目です。</p>
 							</div>
 
@@ -38,7 +39,7 @@ else:
 								<label>価格</label>
 								<div class="input-group">
 									<span class="input-group-addon">¥</span>
-									<input name="price" class="form-control">
+									<input name="price" class="form-control" required>
 								</div>
 								<p class="help-block">※必須項目です。</p>
 							</div>
@@ -90,33 +91,18 @@ else:
 							</div>
 							<div class="form-group">
 								<label>大学</label>
-								<select name="university" class="form-control">
-									<option value="" label="111"></option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
+								<select name="university" class="form-control university_list">
 								</select>
 							</div>
 							<div class="form-group">
 								<label>学部等</label>
-								<select name="faculty" class="form-control" disabled="disable">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
+								<select name="faculty" class="form-control faculty_list" disabled="disable">
 								</select>
 							</div>
 
 							<div class="form-group">
 								<label>学科等</label>
-								<select name="department" class="form-control" disabled="disable">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
+								<select name="department" class="form-control department_list" disabled="disable">
 								</select>
 							</div>
 							<div class="form-group">
@@ -128,14 +114,13 @@ else:
 									<option>要相談</option>
 								</select>
 							</div>
-
-
 						</div>
-
 						<!-- /.col-lg-6 (nested) -->
-						<button type="submit" class="btn btn-default">出品</button>
-						<button type="reset" class="btn btn-default">リセット</button>
+						<div align="center">
 
+							<button type="submit" class="btn btn-default">出品</button>
+							<button type="reset" class="btn btn-default">リセット</button>
+						</div>
 					</form>
 				</div>
 				<!-- /.row (nested) -->

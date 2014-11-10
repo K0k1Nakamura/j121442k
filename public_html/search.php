@@ -95,7 +95,7 @@ session_start();
                                     <a href="search.php">Search</a>
                                 </li>
                                 <li>
-                                    <a href="signout.php">Sign out</a>
+                                    <a href="api/signout.php">Sign out</a>
                                 </li>
                             </ul>
                         </div>
