@@ -86,9 +86,7 @@ if ($name == "" || $price == "") {
         	header("Location: ../saveForm.php");
 
         }
-    } else {
-    	header("Location: mypage.php");
-    }
+    } 
 
     $query_insertText = "INSERT INTO textbook (
     	id,name,author,price,comment,pic,class,university,
@@ -98,7 +96,7 @@ $result = pg_prepare($conn, "", $query_insertText);
 $result = pg_execute($conn, "", array($id_textbook,$name,$author,$price,$comment,
 	$name_pic,$class,$university,$faculty,$department,$grade,$delivery_method,$seller,$stock));
 
-header("Location: ../mypage.php");
+header("Location: ../saveLanding.php");
 
 
 }

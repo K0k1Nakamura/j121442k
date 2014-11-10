@@ -29,7 +29,6 @@ if ($login_name == "" || $pwd == "" || $pwd2 == "" || $pwd != $pwd2 || !preg_mat
 } else {
 	include("header.html");
 	print "<div style='height: 51px'></div>";
-
 	?>
 	<div class="row">
 		<div class="col-lg-12">
