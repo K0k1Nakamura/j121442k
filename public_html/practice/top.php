@@ -43,7 +43,7 @@ session_start();
 	ChromePhp::log($_SESSION);
 	?>		
 	<h2>検索</h2>
-	教科書名<input type="text" name="textbook" id="textbook_name"><br>
+	<h6>教科書名</h6><input type="text" name="textbook" id="textbook_name"><br>
 	<input type="submit" id="search" value="検索"><br>
 	<div id="result"></div>
 

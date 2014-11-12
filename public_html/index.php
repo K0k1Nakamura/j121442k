@@ -1,7 +1,8 @@
 <?php
 include 'ChromePhp.php';
 session_start();
-include("header.html") 
+include("view/topCSS.html");
+include("view/header1.html"); 
 ?>
 
 
@@ -14,26 +15,25 @@ include("header.html")
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
-                    <h1>Landing Page</h1>
-                    <h3>A Template by Start Bootstrap</h3>
+                    <h1>Text Market</h1>
+                    <h3>学ぶ、をより安く。</h3>
                     <hr class="intro-divider">
-                    <ul class="list-inline intro-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                    <div style="width:25%; margin:0 auto;" class="input-group custom-search-form">
+                    <input type="text" class="form-control" id="class_name" placeholder="教科書を検索">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" id="class_search" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                 <!--    <input type="text" placeholder="教科書を検索">
+                 <input type="submit"> -->
+             </div>
+         </div>
+     </div>
 
-    </div>
-    <!-- /.container -->
+ </div>
+ <!-- /.container -->
 
 </div>
 <!-- /.intro-header -->
@@ -137,5 +137,5 @@ include("header.html")
 
 
 <?php
-include("footer.html");
-?>
+include("view/footer1.html");
+include("view/js.html");
