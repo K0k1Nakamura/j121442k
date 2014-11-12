@@ -1,8 +1,8 @@
 <?php
 include 'ChromePhp.php';
 session_start();
-include("topCSS.html");
-include("header1.html"); 
+include("view/topCSS.html");
+include("view/header1.html"); 
 ?>
 
 
@@ -137,5 +137,5 @@ include("header1.html");
 
 
 <?php
-include("footer1.html");
-include("js.html");
+include("view/footer1.html");
+include("view/js.html");

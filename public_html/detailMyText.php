@@ -19,8 +19,8 @@ if(pg_num_rows($result) == 0){
 	$row = pg_fetch_assoc($result, 0);
 	?>
 	<div style="background-color: white;">
-
 		<div class="container">
+
 			<!-- Portfolio Item Heading -->
 			<div class="row">
 				<div class="col-lg-12">
@@ -101,8 +101,8 @@ if(pg_num_rows($result) == 0){
 
 		</div>
 	</div>
-		<?php 
-		include("view/footer1.html");
-		include("view/js.html");
-	}
+	<?php 
+	include("view/footer1.html");
+	include("view/js.html");
+}
 

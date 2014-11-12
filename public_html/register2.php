@@ -9,6 +9,8 @@ $pwd2 = $_POST["pwd2"];
 $grade = $_POST["grade"];
 $university = $_POST["university"];
 $faculty = $department = "";
+$link = $_POST['facebook_link'];
+
 if (isset($_POST['faculty'])) {
 	$faculty = $_POST['faculty'];
 }
@@ -27,8 +29,8 @@ if ($login_name == "" || $pwd == "" || $pwd2 == "" || $pwd != $pwd2 || !preg_mat
 	</script>
 	<?php 
 } else {
-	include("topCSS.html");
-	include("header1.html");
+	include("view/topCSS.html");
+	include("view/header1.html");
 	print "<div style='height: 51px'></div>";
 	?>
 	<div class="row">
@@ -89,6 +91,7 @@ if ($login_name == "" || $pwd == "" || $pwd2 == "" || $pwd != $pwd2 || !preg_mat
 							<input type="hidden" name="university" value=<?php print $university ?>>
 							<input type="hidden" name="faculty" value=<?php print $faculty ?>>
 							<input type="hidden" name="department" value=<?php print $department ?>>
+							<input type="hidden" name="facebook_link" value=<?php print $link ?>>
 
 
 							<!-- /.col-lg-6 (nested) -->
@@ -106,7 +109,9 @@ if ($login_name == "" || $pwd == "" || $pwd2 == "" || $pwd != $pwd2 || !preg_mat
 		</div>
 		<!-- /.col-lg-12 -->
 	</div>
+
+
 	<?php
-include("footer1.html");
-include("js.html");
+include("view/footer1.html");
+include("view/js.html");
 }

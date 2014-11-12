@@ -1,7 +1,9 @@
 <?php
 include 'ChromePhp.php';
 session_start();
-include("header2.html"); 
+include("view/topCSS.html");
+include("view/header1.html"); 
+include("view/header3.html"); 
 ?>
 <div class="row">
 	<div class="col-lg-12">
@@ -80,4 +82,4 @@ include("header2.html");
 	<!-- /.col-lg-12 -->
 </div>
 <?php
-include("footer2.html");
+include("view/footer2.html");

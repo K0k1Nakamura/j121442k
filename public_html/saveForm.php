@@ -3,9 +3,11 @@ include 'ChromePhp.php';
 session_start();
 if(!isset($_SESSION["login_name"])):
 	header("Location: index.php");
-	
+
 else:
-	include("header2.html"); 
+	include("view/topCSS.html");
+	include("view/header1.html"); 
+	include("view/header3.html"); 
 ?>
 <div class="row">
 	<div class="col-lg-12">
@@ -132,5 +134,5 @@ else:
 	<!-- /.col-lg-12 -->
 </div>
 <?
-include("footer2.html");
+include("view/footer2.html");
 endif;
