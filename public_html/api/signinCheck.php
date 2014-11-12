@@ -46,6 +46,3 @@ if(isset($_SESSION["login_name"])){
 		header("Location: ../mypage.php");
 	}
 }
-?>
-<?php
-include("footer.html");

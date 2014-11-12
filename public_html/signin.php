@@ -8,7 +8,8 @@ if(isset($_SESSION["login_name"])){
         $message = $_POST["message"];
     }
     include 'ChromePhp.php';
-    include("header.html");
+    include("topCSS.html");
+    include("header1.html");
     print "<div style='height: 51px'></div>";
     ?>
     <div class="row">
@@ -60,6 +61,6 @@ if(isset($_SESSION["login_name"])){
         <!-- /.col-lg-12 -->
     </div>
     <?php
-    include("footer.html");
-    ChromePhp::log($_SESSION);
+    include("footer1.html");
+    include("js.html");
 }

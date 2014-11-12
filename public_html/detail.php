@@ -33,7 +33,7 @@ if(pg_num_rows($result) == 0){
 		<div class="row">
 
 			<div class="col-md-8">
-			<div style="height:500px;width:750px;">
+				<div style="height:500px;width:750px;">
 					<img src="<?php print "pic/".$row['pic'] ?>" style="max-height: 500px; width: 750px;">
 				</div>
 			</div>
